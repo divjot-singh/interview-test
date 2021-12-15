@@ -1,0 +1,86 @@
+.add-user-form{
+    background: white;
+    min-width: 300px;
+    max-height: 90%;
+    overflow: auto;
+    position: relative;
+    .close{
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        cursor: pointer;
+    }
+    .form-element{
+        padding: 16px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 16px;
+        font-size: 14px;
+        flex-flow: column;
+        &.multiline{
+            input{
+                margin-bottom: 12px;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        label{
+            font-weight: bold;
+            margin-right: 8px;
+            flex: 0 0 auto;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        input{
+            flex: 1 1 auto;
+            padding: 8px 10px;
+            width: 100%;
+        }
+    }
+    .button-container{
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        padding: 8px;
+        background: white;
+        box-shadow: 0px -2px 5px #f3f3f5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button{
+            background-color: blue;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            outline: none;
+            border: none;
+            padding: 4px 12px;
+            border-radius: 12px;
+            padding: 12px;
+            border-radius: 10px;
+            flex: 1 1 calc(50% - 4px);
+            border: 1px solid blue;
+            &:first-of-type{
+                margin-right: 8px;
+            }
+            &.outlined{
+                background-color: white;
+                color: blue;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .add-user-form{
+        width: 600px;
+        .button-container{
+            button{
+                min-width: 150px;
+            }
+        }
+    }
+}

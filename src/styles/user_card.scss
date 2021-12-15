@@ -1,0 +1,28 @@
+.user-card{
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 8px 16px 32px;
+    margin: 0 8px 8px 0;
+    max-width: 300px;
+    position: relative;
+    label{
+        font-weight: bold;
+    }
+    .info-item{
+        margin-bottom: 8px;
+        text-align: left;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+    .controls{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 4px 16px;
+    }
+}

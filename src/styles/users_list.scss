@@ -1,0 +1,38 @@
+
+.users-list-container{
+    text-align: center;
+    .users-list{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 16px;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .add-button{
+        position: fixed;
+        bottom: 10%;
+        right: 10%;
+        border-radius: 50%;
+        background: blue;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        svg{
+            color: white;
+        }
+    }
+    .dialog-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
